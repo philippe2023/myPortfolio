@@ -50,6 +50,15 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
+
+      <div className={`${id === 6} && 'flex justify-center h-full`}>
+        <div className="w-full h-full absolute">
+          {img && (
+            <img src={img} alt={img} className={cn(imgClassName, 'object-cover, object-center')} />
+          )}
+        </div>
+      </div>
+
       <div className="group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10">
         <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
           {title}
